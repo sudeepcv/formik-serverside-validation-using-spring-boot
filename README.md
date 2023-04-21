@@ -27,3 +27,5 @@ Usage
 Once you have started the application, you can access the React frontend by navigating to http://localhost:3000 in your web browser. You can access the Spring Boot backend API by navigating to http://localhost:8080.
 
 
+blog post : https://basics-in-java.blogspot.com/2023/04/server-side-form-validation-with-formik.html
+
