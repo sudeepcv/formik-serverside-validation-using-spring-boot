@@ -1,0 +1,23 @@
+version: "3.9"
+services:
+  formik-server:
+    build:
+      context: .
+      dockerfile: Dockerfile-formik-server
+    ports:
+      - "8080:8080"
+    depends_on:
+      - react-frontend
+    networks:
+      - formik-net
+  react-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile-react-frontend
+    ports:
+      - "3000:3000"
+    networks:
+      - formik-net
+networks:
+  formik-net:
+    driver: bridge
